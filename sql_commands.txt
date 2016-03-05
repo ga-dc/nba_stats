@@ -47,5 +47,3 @@
 2. Team and the the number of players who score above 12 points per game on that team, ordered from most to least
 
   SELECT team, COUNT(players) FROM players WHERE points/games > 12 GROUP BY team ORDER BY count DESC;
-
-Feel pretty good about it so far.  All the commands seem fairly intuitive.
