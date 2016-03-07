@@ -16,8 +16,6 @@ SELECT * FROM players ORDER BY points;
 4.
 ```
 SELECT DISTINCT name, points FROM players ORDER BY points DESC                             LIMIT 20;
-
-Name and Points per game (points/games), for the players with the top 20 points per game
 ```
 5.
 ```
@@ -44,7 +42,9 @@ ORDER BY points DESC;
 
 Bonus 1
 ```
-SELECT AVG(age, points) FROM players ORDER BY age ASC;
+SELECT age, AVG(points) FROM players
+GROUP BY age
+ORDER BY age ASC;
 ```
 
 Bonus 2
