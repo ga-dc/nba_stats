@@ -15,8 +15,10 @@
 
 6. The average age for all players on the Oklahoma City Thunder (OKC)
 
+   SELECT AVG(age) FROM players WHERE team = 'OKC';
 
 7. The average age for all players who played more than 40 games
 
+   SELECT AVG(age) FROM players WHERE games > 40;
 
 8. The team and total points scored from all players on that team (team points), ordered from most team points to least
