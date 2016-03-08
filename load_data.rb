@@ -1,6 +1,6 @@
 require 'pg'
 
-db_conn = PG.connect(:dbname => 'nba_db', :host => 'localhost')
+db_conn = PG.connect(:dbname => 'nba_db', :host => 'localhost', :user => 'postgres', :password => "password")
 
 file = File.new("data.csv", "a+")
 

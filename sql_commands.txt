@@ -1,0 +1,15 @@
+ enter into database:  \c nba_db
+ shows all players: SELECT * FROM players;
+
+1. SELECT * FROM players WHERE team = 'NYK';
+2. SELECT * FROM players WHERE team = 'IND'AND age < 26;
+3. SELECT * FROM players ORDER BY points ASC;
+4. SELECT name, points FROM players ORDER BY points DESC limit 20;
+5. SELECT AVG(age) FROM players;
+6.  SELECT AVG(age) FROM players WHERE team = 'OKC';
+7.  SELECT AVG(age) FROM players WHERE games > 40;
+
+I know how to get the some of points for a particular team:
+8. SELECT SUM(points) FROM players WHERE team = 'NYK';
+
+--but how do you get sum of points from each team AND show them is DESC order?
