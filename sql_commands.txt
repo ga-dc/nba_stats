@@ -6,10 +6,11 @@
 3. SELECT * FROM players ORDER BY points ASC;
 4. SELECT name, points FROM players ORDER BY points DESC limit 20;
 5. SELECT AVG(age) FROM players;
-6.  SELECT AVG(age) FROM players WHERE team = 'OKC';
+6. SELECT AVG(age) FROM players WHERE team = 'OKC';
 7.  SELECT AVG(age) FROM players WHERE games > 40;
 
 I know how to get the some of points for a particular team:
-8. SELECT SUM(points) FROM players WHERE team = 'NYK';
+8. SELECT team, SUM(points) FROM players GROUP BY team;
 
---but how do you get sum of points from each team AND show them is DESC order?
+
+--but how do you show them is DESC order?
