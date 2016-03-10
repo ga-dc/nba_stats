@@ -18,6 +18,8 @@ Figure out the appropriate SQL commands to find out the following, and keep trac
 
   SELECT name, (points/games) FROM players ORDER BY (points/games)
 
+    # Reverse ORDER BY?, top 20?
+
 5. The average age for all players
 
   SELECT AVG(age) FROM players;
@@ -33,3 +35,5 @@ Figure out the appropriate SQL commands to find out the following, and keep trac
 8. The team and total points scored from all players on that team (team points), ordered from most team points to least
 
   SELECT team, SUM(points) FROM players ORDER BY SUM(points)
+
+    # Reverse ORDER BY?, ORDER BY SUM(points) does not work
