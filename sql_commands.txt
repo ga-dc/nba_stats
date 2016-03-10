@@ -1,0 +1,4 @@
+
+SELECT * FROM players WHERE team = 'NYK';
+
+SELECT * FROM players WHERE team = 'IND' and age < 26;
