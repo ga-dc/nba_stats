@@ -1,0 +1,5 @@
+Part 1
+---------------
+psql           to start CLI for database
+CREATE DATABASE nba_db;
+psql -d nba_db -f players.sql; ( from from terminal )
