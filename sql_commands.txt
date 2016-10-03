@@ -23,3 +23,5 @@ SELECT AVG(age) FROM players WHERE games >= 40;
 
 
 The team and total points scored from all players on that team (team points), ordered from most team points to least
+
+SELECT SUM(points) FROM players WHERE team = 'DAL';
