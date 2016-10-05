@@ -1,5 +1,6 @@
 require 'pg'
-
+require 'pry'
+require 'active_record'
 db_conn = PG.connect(:dbname => 'nba_db', :host => 'localhost')
 
 file = File.new("data.csv", "a+")
@@ -22,3 +23,5 @@ end
 file.close
 
 db_conn.close
+
+binding.pry
