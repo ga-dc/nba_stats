@@ -1,0 +1,155 @@
+
+MICHAELS_MAC=# \h
+Available help:
+  ABORT                            CREATE FOREIGN TABLE             DROP SEQUENCE
+  ALTER AGGREGATE                  CREATE FUNCTION                  DROP SERVER
+  ALTER COLLATION                  CREATE GROUP                     DROP TABLE
+  ALTER CONVERSION                 CREATE INDEX                     DROP TABLESPACE
+  ALTER DATABASE                   CREATE LANGUAGE                  DROP TEXT SEARCH CONFIGURATION
+  ALTER DEFAULT PRIVILEGES         CREATE MATERIALIZED VIEW         DROP TEXT SEARCH DICTIONARY
+  ALTER DOMAIN                     CREATE OPERATOR                  DROP TEXT SEARCH PARSER
+  ALTER EVENT TRIGGER              CREATE OPERATOR CLASS            DROP TEXT SEARCH TEMPLATE
+  ALTER EXTENSION                  CREATE OPERATOR FAMILY           DROP TRANSFORM
+  ALTER FOREIGN DATA WRAPPER       CREATE POLICY                    DROP MICHAELS_MAC"#   \lo_export LOBOID FILE
+  \lo_import FILE [COMMENT]
+  \lo_list
+  \lo_unlink LOBOID      large object operations
+MICHAELS_MAC=# \h
+Available help:
+  ABORT                            CREATE FOREIGN TABLE             DROP SEQUENCE
+  ALTER AGGREGATE                  CREATE FUNCTION                  DROP SERVER
+  ALTER COLLATION                  CREATE GROUP                     DROP TABLE
+  ALTER CONVERSION                 CREATE INDEX                     DROP TABLESPACE
+  ALTER DATABASE                   CREATE LANGUAGE                  DROP TEXT SEARCH CONFIGURATION
+  ALTER DEFAULT PRIVILEGES         CREATE MATERIALIZED VIEW         DROP TEXT SEARCH DICTIONARY
+  ALTER DOMAIN                     CREATE OPERATOR                  DROP TEXT SEARCH PARSER
+  ALTER EVENT TRIGGER              CREATE OPERATOR CLASS            DROP TEXT SEARCH TEMPLATE
+  ALTER EXTENSION                  CREATE OPERATOR FAMILY           DROP TRANSFORM
+  ALTER FOREIGN DATA WRAPPER       CREATE POLICY                    DROP T  ALTER FOREER  ALTER FORMICHAELS_MAC"#   \lo_import FILE [COMMENT]
+MICHAELS_MAC"#   \lo_list
+MICHAELS_MAC"#   \lo_unlink LOBOID      large object operations
+MICHAELS_MAC"# MICHAELS_MAC=# \h
+MICHAELS_MAC"# Available help:
+MICHAELS_MAC"#   ABORT                            CREATE FOREIGN TABLE             DROP SEQUENCE
+MICHAELS_MAC"#   ALTER AGGREGATE                  CREATE FUNCTION                  DROP SERVER
+MICHAELS_MAC"#   ALTER COLLATION                  CREATE GROUP                     DROP TABLE
+MICHAELS_MAC"#   ALTER CONVERSION                 CREATE INDEX                     DROP TABLESPACE
+MICHAELS_MAC"#   ALTER DATABASE                   CREATE LANGUAGE                  DROP TEXT SEARCH CONFIGURATION
+MICHAELS_MAC"#   ALTER DEFAULT PRIVILEGES         CREATE MATERIALIZED VIEW         DROP TEXT SEARCH DICTIONARY
+MICHAELS_MAC"#   ALTER DOMAIN                     CREATE OPERATOR                  DROP TEXT SEARCH PARSER
+MICHAELS_MAC"#   ALTER EVENT TRIGGER              CREATE OPERATOR CLASS            DROP TEXT SEARCH TEMPLATE
+MICHAELS_MAC"#   ALTER EXTENSION                  CREATE OPERATOR FAMILY           DROP TRANSFORM
+MICHAELS_MAC"#   ALTER FOREIGN DATA WRAPPER       CREATE POLICY                    DROP T  ALTER FOREER  ALTER FOREIGN DA          CREATE ROLE                      DROP TYPE
+MICHAELS_MAC"#   ALTER FUNCTION                   CREATE RULE                      DROP USER
+MICHAELS_MAC"#   ALTER GROUP                      CREATE SCHEMA                    DROP USER MAPPING
+MICHAELS_MAC"#   ALTER INDEX                      CREATE SEQUENCE                  DROP VIEW
+MICHAELS_MAC"#   ALTER LANGUAGE                   CREATE SERVER                    END
+MICHAELS_MAC"#   ALTER LARGE OBJECT               CREATE TABLE                     EXECUTE
+MICHAELS_MAC"#   ALTER MATERIALIZED VIEW          CREATE TABLE AS                  EXPLAIN
+MICHAELS_MAC"#   ALTER OPERATOR                   CREATE TABLESPACE                FETCH
+MICHAELS_MAC"#   ALTER OPERATOR CLASS             CREATE TEXT SEARCH CONFIGURATION GRANT
+MICHAELS_MAC"#   ALTER OPERATOR FAMILY            CREATE TEXT SEARCH DICTIONARY    IMPORT FOREIGN SCHEMA
+MICHAELS_MAC"#   ALTER POLICY                     CREATE TEXT SEARCH PARSER        INSERT
+MICHAELS_MAC"#   ALTER ROLE                       CREATE TEXT SEARCH TEMPLATE      LISTEN
+MICHAELS_MAC"#   ALTER RULE                       CREATE TRANSFORM                 LOAD
+MICHAELS_MAC"#   ALTER SCHEMA                     CREATE TRIGGER                   LOCK
+MICHAELS_MAC"# MICHAELS_MAC=# help
+MICHAELS_MAC"# You are using psql, the command-line interface to PostgreSQL.
+MICHAELS_MAC"# Type:  \copyright for distribution terms
+MICHAELS_MAC"#        \h for help with SQL commands
+MICHAELS_MAC"#        \? for help with psql commands
+MICHAELS_MAC"#        \g or terminate with semicolon to execute query
+MICHAELS_MAC"#        \q to quit
+MICHAELS_MAC"# MICHAELS_MAC=# \h
+MICHAELS_MAC"# Available help:
+MICHAELS_MAC"#   ABORT                            CREATE FOREIGN TABLE             DROP SEQUENCE
+MICHAELS_MAC"#   ALTER AGGREGATE                  CREATE FUNCTION                  DROP SERVER
+MICHAELS_MAC"#   ALTER COLLATION                  CREATE GROUP                     DROP TABLE
+MICHAELS_MAC"#   ALTER CONVERSION                 CREATE INDEX                     DROP TABLESPACE
+MICHAELS_MAC"#   ALTER DATABASE                   CREATE LANGUAGE                  DROP TEXT SEARCH CONFIGURATION
+MICHAELS_MAC"#   ALTER DEFAULT PRIVILEGES         CREATE MATERIALIZED VIEW         DROP TEXT SEARCH DICTIONARY
+MICHAELS_MAC"#   ALTER DOMAIN                     CREATE OPERATOR                  DROP TEXT SEARCH PARSER
+MICHAELS_MAC"#   ALTER EVENT TRIGGER              CREATE OPERATOR CLASS            DROP TEXT SEARCH TEMPLATE
+MICHAELS_MAC"#   ALTER EXTENSION                  CREATE OPERATOR FAMILY           DROP TRANSFORM
+MICHAELS_MAC"#   ALTER FOREIGN DATA WRAPPER       CREATE POLICY                    DROP TRIGGER
+MICHAELS_MAC"#   ALTER FOREIGN TABLE              CREATE ROLE                      DROP TYPE
+MICHAELS_MAC"#   ALTER FUNCTION                   CREATE RULE                      DROP USER
+MICHAELS_MAC"#   ALTER GROUP                      CREATE SCHEMA                    DROP USER MAPPING
+MICHAELS_MAC"#   ALTER INDEX                      CREATE SEQUENCE                  DROP VIEW
+MICHAELS_MAC"#   ALTER LANGUAGE                   CREATE SERVER                    END
+MICHAELS_MAC"#   ALTER LARGE OBJECT               CREATE TABLE                     EXECUTE
+MICHAELS_MAC"#   ALTER MATERIALIZED VIEW          CREATE TABLE AS                  EXPLAIN
+MICHAELS_MAC"#   ALTER OPERATOR                   CREATE TABLESPACE                FETCH
+MICHAELS_MAC"#   ALTER OPERATOR CLASS             CREATE TEXT SEARCH CONFIGURATION GRANT
+MICHAELS_MAC"#   ALTER OPERATOR FAMILY            CREATE TEXT SEARCH DICTIONARY    IMPORT FOREIGN SCHEMA
+MICHAELS_MAC"#   ALTER POLICY                     CREATE TEXT SEARCH PARSER        INSERT
+MICHAELS_MAC"#   ALTER ROLE                       CREATE TEXT SEARCH TEMPLATE      LISTEN
+MICHAELS_MAC"#   ALTER RULE                       CREATE TRANSFORM                 LOAD
+MICHAELS_MAC"#   ALTER SCHEMA                     CREATE TRIGGER                   LOCK
+MICHAELS_MAC"#   ALTER SEQUENCE                   CREATE TYPE                      MOVE
+MICHAELS_MAC"#   ALTER SERVER                     CREATE USER                      NOTIFY
+MICHAELS_MAC"#   ALTER SYSTEM                     CREATE USER MAPPING              PREPARE
+MICHAELS_MAC"#   ALTER TABLE                      CREATE VIEW                      PREPARE TRANSACTION
+MICHAELS_MAC"#   ALTER TABLESPACE                 DEALLOCATE                       REASSIGN OWNED
+MICHAELS_MAC"#   ALTER TEXT SEARCH CONFIGURATION  DECLARE                          REFRESH MATERIALIZED VIEW
+MICHAELS_MAC"#   ALTER TEXT SEARCH DICTIONARY     DELETE                           REINDEX
+  ALTER TEXT SEARCH PARSER         DISCARD                          RELEASE SAVEPOINT
+  ALTER TEXT SEARCH TEMPLATE       DO                               RESET
+  ALTER TRIGGER                    DROP AGGREGATE                   REVOKE
+  ALTER TYPE                       DROP CAST                        ROLLBACK
+  ALTER USER                       DROP COLLATION                   ROLLBACK PREPARED
+  ALTER USER MAPPING               DROP CONVERSION                  ROLLBACK TO SAVEPOINT
+  ALTER VIEW                       DROP DATABASE                    SAVEPOINT
+  ANALYZE                          DROP DOMAIN                      SECURITY LABEL
+  BEGIN                            DROP EVENT TRIGGER               SELECT
+  CHECKPOINT                       DROP EXTENSION                   SELECT INTO
+  CLOSE                            DROP FOREIGN DATA WRAPPER        SET
+  CLUSTER                          DROP FOREIGN TABLE               SET   CLUSTER                          DROP FOREIGN TABLE            MICHAELS_MAC"#   ALTER TEXT SEARCH PARSER         DISCARD                          RELEASE SAVEPOINT
+  ALTER TEXT SEARCH TEMPLATE       DO                               RESET
+  ALTER TRIGGER                    DROP AGGREGATE                   REVOKE
+  ALTER TYPE                       DROP CAST                        ROLLBACK
+  ALTER USER                       DROP COLLATION                   ROLLBACK PREPARED
+  ALTER USER MAPPING               DROP CONVERSION                  ROLLBACK TO SAVEPOINT
+  ALTER VIEW                       DROP DATABASE                    SAVEPOINT
+  ANALYZE                          DROP DOMAIN                      SECURITY LABEL
+  BEGIN                            DROP EVENT TRIGGER               SELECT
+  CHECKPOINT                       DROP EXTENSION                   SELECT INTO
+  CLOSE                            DROP FOREIGN DATA WRAPPER        SET
+  CLUSTER                          DROP FOREIGN TABLE               SET   CLUSTER                          DROP FOREIGN TABLE               SET       CLUSTER                          DROP FOREIGN TABLE               SET   CLMICHAELS_MAC"#   ALTER TEXT SEARCH TEMPLATE       DO                               RESET
+  ALTER TRIGGER                    DROP AGGREGATE                   REVOKE
+  ALTER TYPE                       DROP CAST                        ROLLBACK
+  ALTER USER                       DROP COLLATION                   ROLLBACK PREPARED
+  ALTER USER MAPPING               DROP CONVERSION                  ROLLBACK TO SAVEPOINT
+  ALTER VIEW                       DROP DATABASE                    SAVEPOINT
+  ANALYZE                          DROP DOMAIN                      SECURITY LABEL
+  BEGIN                            DROP EVENT TRIGGER               SELECT
+  CHECKPOINT                       DROP EXTENSION                   SELECT INTO
+  CLOSE                            DROP FOREIGN DATA WRAPPER        SET
+  CLUSTER                          DROP FOREIGN TABLE               SET   CLUSTER                          DROP FOREIGN TABLE               SET       CLUSTER                          DROP FOREIGN TABLE               SET   CLUSTER    S  CLUSTER                          DROP FOREIGN TABLE            MICHAELS_MAC"#   ALTER TRIGGER                    DROP AGGREGATE                   REVOKE
+  ALTER TYPE                       DROP CAST                        ROLLBACK
+  ALTER USER                       DROP COLLATION                   ROLLBACK PREPARED
+  ALTER USER MAPPING               DROP CONVERSION                  ROLLBACK TO SAVEPOINT
+  ALTER VIEW                       DROP DATABASE                    SAVEPOINT
+  ANALYZE                          DROP DOMAIN                      SECURITY LABEL
+  BEGIN                            DROP EVENT TRIGGER               SELECT
+  CHECKPOINT                       DROP EXTENSION                   SELECT INTO
+  CLOSE                            DROP FOREIGN DATA WRAPPER        SET
+  CLUSTER                          DROP FOREIGN TABLE               SET   CLUSTER                          DROP FOREIGN TABLE               SET       CLUSTER                          DROP FOREIGN TABLE               SET   CLUSTER    S  CLUSTER                          DROP FOREIGN TABLE               SET     CLUSTER                          DROP FOREIGN TABLE              MICHAELS_MAC"#   ALTER TYPE                       DROP CAST                        ROLLBACK
+MICHAELS_MAC"#   ALTER USER                       DROP COLLATION                   ROLLBACK PREPARED
+MICHAELS_MAC"#   ALTER USER MAPPING               DROP CONVERSION                  ROLLBACK TO SAVEPOINT
+MICHAELS_MAC"#   ALTER VIEW                       DROP DATABASE                    SAVEPOINT
+MICHAELS_MAC"#   ANALYZE                          DROP DOMAIN                      SECURITY LABEL
+MICHAELS_MAC"#   BEGIN                            DROP EVENT TRIGGER               SELECT
+MICHAELS_MAC"#   CHECKPOINT                       DROP EXTENSION                   SELECT INTO
+MICHAELS_MAC"#   CLOSE                            DROP FOREIGN DATA WRAPPER        SET
+MICHAELS_MAC"#   CLUSTER                          DROP FOREIGN TABLE               SET   CLUSTER                          DROP FOREIGN TABLE               SET       CLUSTER                          DROP FOREIGN TABLE               SET   CLUSTER    S  CLUSTER                          DROP FOREIGN TABLE               SET     CLUSTER                          DROP FOREIGN TABLE               SETLANGUAGE                    SHOW
+MICHAELS_MAC"#   CREATE AGGREGATE                 DROP MATERIALIZED VIEW           START TRANSACTION
+MICHAELS_MAC"#   CREATE CAST                      DROP OPERATOR                    TABLE
+MICHAELS_MAC"#   CREATE COLLATION                 DROP OPERATOR CLASS              TRUNCATE
+MICHAELS_MAC"#   CREATE CONVERSION                DROP OPERATOR FAMILY             UNLISTEN
+MICHAELS_MAC"#   CREATE DATABASE                  DROP OWNED                       UPDATE
+MICHAELS_MAC"#   CREATE DOMAIN                    DROP POLICY                      VACUUM
+MICHAELS_MAC"#   CREATE EVENT TRIGGER             DROP ROLE                        VALUES
+MICHAELS_MAC"#   CREATE EXTENSION                 DROP RULE                        WITH
+MICHAELS_MAC"#   CREATE FOREIGN DATA WRAPPER      DROP SCHEMA
+MICHAELS_MAC"# MICHAELS_MAC=#
