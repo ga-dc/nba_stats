@@ -1,0 +1,8 @@
+SELECT * FROM players WHERE Team = 'NYK';
+SELECT * FROM players WHERE team = 'IND' AND age < 26;
+SELECT * FROM players ORDER BY points;
+SELECT name, (points / games) AS points_per_game FROM players ORDER BY points_per_game DESC limit 20;
+SELECT AVG(age) FROM players;
+SELECT AVG(age) FROM players WHERE team = 'OKC';
+SELECT AVG(age) FROM players WHERE age > 40;
+SELECT team, SUM(points) AS total_points FROM players GROUP BY team ORDER BY total_points DESC;
