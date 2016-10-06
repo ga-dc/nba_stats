@@ -1,0 +1,5 @@
+1. SELECT * FROM players WHERE team = 'NYK';
+
+2. SELECT * FROM players WHERE age <= 26 AND team = 'IND';
+
+3. SELECT * FROM players ORDER BY points ASC;
