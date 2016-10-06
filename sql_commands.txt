@@ -5,10 +5,13 @@
 5. select avg(age) from players
 6. select avg age from players where team = 'OKC'
 7.select avg age from players where games > 40
-select team, sum(points) from players group by team order by sum(points) desc;
+8. select team, sum(points) from players group by team order by sum(points) desc;
 
 select sum(points) from players GROUP BY team;
 nba_db=# select sum(points) from players GROUP BY team = 'WAS';
 for Number 8
 
 select team, sum(points) from players ORDER BY sum(points) asc Group by team;
+
+
+select name, points/games from players where
