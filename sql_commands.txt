@@ -1,1 +1,2 @@
 select * from players where team = 'NYK'
+select * from players where team ='IND' and age < 26;
