@@ -20,4 +20,4 @@ SELECT AVG(age) FROM players WHERE team = 'OKC'
 SELECT AVG(age) FROM players WHERE games > 40;
 
 8. The team and total points scored from all players on that team (team points), ordered from most team points to least
-SELECT team, SUM(points) as team_points FROM players group by team ORDER BY team_points DESC;
+SELECT team, SUM(points) FROM players GROUP BY team 
