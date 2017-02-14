@@ -1,0 +1,23 @@
+Kept forgetting ';' for some reason
+1.SELECT * FROM players  WHERE team = 'NYK';
+
+2.SELECT * FROM players WHERE team = 'IND' AND age < 26;
+
+3. SELECT * FROM players ORDER BY points ASC;
+  just the points -  SELECT points FROM players ORDER BY points ASC;
+
+4. SELECT name AS MVPs, points/games AS points FROM PLAYERS WHERE points/games > 20;
+
+5. SELECT AVG(age) FROM players;
+   AVG(age) = 26.6443514644351464
+
+6.SELECT AVG(age) AS AGEAverage FROM players WHERE team = 'OKC';
+    ageaverage   = 25.4000000000000000
+
+7.SELECT AVG(age) AS AverageAGE FROM players WHERE games > 40;
+   averageage = 26.4561403508771930
+
+8. SELECT team, SUM(points) AS team_points FROM players GROUP BY team ORDER BY  SUM(points) DESC;
+
+
+BONUS
