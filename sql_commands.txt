@@ -16,7 +16,7 @@ Figure out the appropriate SQL commands to find out the following, and keep trac
 
 4. Name and Points per game (points/games), for the players with the top 20 points per game
 
-  nba_db=# SELECT name, AVG((points+games) /2) FROM players GROUP BY name, points ORDER BY points desc limit 20;
+  nba_db=# SELECT name, AVG(points/games) FROM players GROUP BY name, points ORDER BY AVG(points/games) desc limit 20;
 
 5. The average age for all players
 
@@ -28,13 +28,17 @@ Figure out the appropriate SQL commands to find out the following, and keep trac
 
 7. The average age for all players who played more than 40 games
 
-  
+  nba_db=# SELECT AVG(age) FROM players WHERE games > 40;
 
 8. The team and total points scored from all players on that team (team points), ordered from most team points to least
+
+  nba_db=# SELECT team, SUM(points) FROM players GROUP BY team, points ORDER BY points desc;
 
 ###Bonus
 1. Age and the average points per game for that age, ordered from youngest to oldest
 
-
+  nba_db=# SELECT age, AVG(points/games) FROM players GROUP BY age ORDER BY age asc;
 
 2. Team and the the number of players who score above 12 points per game on that team, ordered from most to least
+
+  nba_db=# SELECT team, COUNT(points/games) FROM players WHERE points > 12 GROUP BY team ORDER BY COUNT(points/games) desc;
