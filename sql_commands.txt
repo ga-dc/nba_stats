@@ -1,0 +1,112 @@
+##########################
+201702141747L   EL MARTES   GIRO
+##########################
+
+              Part 3
+              Figure out the appropriate SQL commands to find out the following, and keep track of them in the file called sql_commands.txt
+###################################################################################
+All columns for all players from the New York Knicks (NYK)
+              nba_db=#
+select * from players where team = 'IND';
+               id  |       name       | age | team | games | points
+              -----+------------------+-----+------+-------+--------
+                12 | Louis Amundson   |  29 | IND  |    60 |    213
+                91 | Darren Collison  |  24 | IND  |    60 |    621
+               143 | Kyrylo Fesenko   |  25 | IND  |     3 |      8
+               151 | Jeff Foster      |  35 | IND  |    11 |     25
+               164 | Paul George      |  21 | IND  |    66 |    798
+               175 | Danny Granger    |  28 | IND  |    62 |   1159
+               185 | Tyler Hansbrough |  26 | IND  |    66 |    614
+               203 | Roy Hibbert      |  25 | IND  |    65 |    834
+               207 | George Hill      |  25 | IND  |    50 |    481
+               252 | Dahntay Jones    |  31 | IND  |    65 |    346
+               350 | Jeff Pendergraph |  24 | IND  |    20 |     34
+               357 | A.J. Price       |  25 | IND  |    44 |    172
+               403 | Lance Stephenson |  21 | IND  |    42 |    106
+               453 | David West       |  31 | IND  |    66 |    842
+              (14 rows)
+
+              ###################################################################################
+              All columns for all players from the Indiana Packers (IND) who are under 26 years old
+select * from players where team= 'IND' and age < 26;
+              nba_db=# select * from players where team= 'IND' and age < 26;
+               id  |       name       | age | team | games | points
+              -----+------------------+-----+------+-------+--------
+                91 | Darren Collison  |  24 | IND  |    60 |    621
+               143 | Kyrylo Fesenko   |  25 | IND  |     3 |      8
+               164 | Paul George      |  21 | IND  |    66 |    798
+               203 | Roy Hibbert      |  25 | IND  |    65 |    834
+               207 | George Hill      |  25 | IND  |    50 |    481
+               350 | Jeff Pendergraph |  24 | IND  |    20 |     34
+               357 | A.J. Price       |  25 | IND  |    44 |    172
+               403 | Lance Stephenson |  21 | IND  |    42 |    106
+              (8 rows)
+
+
+
+              ###################################################################################
+              All columns for all players, ordered from least points scored to most points scored
+              nba_db=#
+select * from players order by points asc;
+               id  |        name         | age | team | games | points
+              -----+---------------------+-----+------+-------+--------
+               324 | Hamady NDiaye       |  25 | WAS  |     3 |      0
+               155 | Dan Gadzuric        |  33 | NYK  |     2 |      0
+               390 | Brian Skinner       |  35 | MEM  |     1 |      0
+                  ...
+               232 | LeBron James        |  27 | MIA  |    62 |   1683
+               125 | Kevin Durant        |  23 | OKC  |    66 |   1850
+              (478 rows)
+
+################################################################################
+                          Name and Points per game (points/games), for the players with the top 20 points per game
+                          nba_db=#
+select name, points, games, points/games  as ppg from players order by 4 desc limit 20 ;
+                         name        | points | games | ppg
+                  -------------------+--------+-------+-----
+                   Kevin Durant      |   1850 |    66 |  28
+                   Kobe Bryant       |   1616 |    58 |  27
+                   LeBron James      |   1683 |    62 |  27
+                   Kevin Love        |   1432 |    55 |  26
+                   Russell Westbrook |   1558 |    66 |  23
+                   Dwyane Wade       |   1082 |    49 |  22
+                   Carmelo Anthony   |   1245 |    55 |  22
+                   Monta Ellis       |    811 |    37 |  21
+                   LaMarcus Aldridge |   1191 |    55 |  21
+                   Derrick Rose      |    852 |    39 |  21
+                   Dirk Nowitzki     |   1342 |    62 |  21
+                   Blake Griffin     |   1368 |    66 |  20
+                   Deron Williams    |   1154 |    55 |  20
+                   Dwight Howard     |   1113 |    54 |  20
+                   David Lee         |   1147 |    57 |  20
+                   Eric Gordon       |    185 |     9 |  20
+                   Andrea Bargnani   |    603 |    31 |  19
+                   Al Jefferson      |   1170 |    61 |  19
+                   Paul Pierce       |   1181 |    61 |  19
+                   Chris Paul        |   1189 |    60 |  19
+                  (20 rows)
+
+              ################################################################################
+              The average age for all players
+select avg(age) from players;
+              nba_db=# select avg(age) from players;
+              avg
+              ---------------------
+               26.6443514644351464
+              (1 row)
+
+              ################################################################################
+              The average age for all players on the Oklahoma City Thunder (OKC)
+select avg(age) from players where team = 'OKC';
+              nba_db=#               select avg(age) from players where team = 'OKC';
+                       avg
+              ---------------------
+               25.4000000000000000
+
+               ################################################################################
+              The average age for all players who played more than 40 games
+              The team and total points scored from all players on that team (team points), ordered from most team points to least
+              ###Bonus
+
+              Age and the average points per game for that age, ordered from youngest to oldest
+              Team and the the number of players who score above 12 points per game on that team, ordered from most to least
