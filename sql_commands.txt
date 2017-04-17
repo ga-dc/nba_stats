@@ -5,4 +5,4 @@ SELECT name, points/games FROM players LIMIT 20;
 SELECT AVG(age) FROM players;
 SELECT AVG(age) FROM players WHERE team = 'OKC';
 SELECT AVG(age) FROM players WHERE games > 40;
-SELECT team, SUM(points) FROM players GROUP BY team ORDER BY SUM(points);
+SELECT team, SUM(points) FROM players GROUP BY team ORDER BY SUM(points) DESC;
