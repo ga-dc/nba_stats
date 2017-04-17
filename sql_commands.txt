@@ -1,0 +1,26 @@
+
+1. Conner=# \c nba_db
+You are now connected to database "nba_db" as user "Conner".
+nba_db=# SELECT * FROM players WHERE team = 'NYK';
+
+2. Conner=# \c nba_db
+You are now connected to database "nba_db" as user "Conner".
+nba_db=# SELECT * FROM players WHERE team = 'NYK';
+
+3. nba_db=# SELECT * FROM players ORDER by points;
+
+4. nba_db=# SELECT name, (points / games) AS ppg FROM players ORDER BY ppg DESC LIMIT 20;
+       name
+
+5. nba_db=# SELECT AVG(age) FROM players;
+         avg
+---------------------
+ 26.6443514644351464
+
+ 6.nba_db=# SELECT AVG(age) FROM players WHERE team = 'OKC'
+nba_db-# ;
+
+
+7. nba_db=# SELECT AVG(age) FROM players WHERE games > 40;
+         avg
+-------------------
