@@ -41,10 +41,7 @@ SELECT AVG(age) FROM players WHERE team = 'OKC';
 7. The average age for all players who played more than 40 games
 SELECT AVG(age) FROM players WHERE games >40;
 8. The team and total points scored from all players on that team (team points), ordered from most team points to least
-SELECT SUM(points) FROM players WHERE team = ' ';
-
-ORDER BY team DESC;
-sql_in 
+SELECT SUM(points),team FROM players GROUP BY team ORDER BY SUM(points) DESC;
 
 ### Bonus
 1. Age and the average points per game for that age, ordered from youngest to oldest
