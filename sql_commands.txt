@@ -1,0 +1,89 @@
+1. All columns for all players from the New York Knicks (NYK)
+
+nba_db=# SELECT * FROM players WHERE team = 'NYK';
+
+2. All columns for all players from the Indiana Packers (IND) who are under 26 years old
+
+nba_db=# SELECT * FROM players WHERE team = 'IND' AND age < 26;
+
+3. All columns for all players, ordered from least points scored to most points scored
+
+nba_db=# SELECT * FROM players ORDER BY points;
+
+4. Name and Points per game (points/games), for the players with the top 20 points per game
+
+SELECT name, (points / games) AS ppg FROM players ORDER BY ppg DESC LIMIT 20;
+
+5. The average age for all players
+
+SELECT AVG(age) FROM players;
+
+6. The average age for all players on the Oklahoma City Thunder (OKC)
+
+SELECT AVG(age) FROM players WHERE team = 'OKC';
+
+7. The average age for all players who played more than 40 games
+
+SELECT AVG(age) FROM players WHERE games > 40;
+
+8. The team and total points scored from all players on that team (team points), ordered from most team points to least
+
+SELECT team, SUM(points) as team_points FROM players group by team ORDER BY team_points DESC;
+
+
+
+
+
+
+#############################
+# Bonus
+#############################
+
+1. Age and the the average points per game for that age, ordered FROM youngest to oldest
+
+SELECT age, AVG(points / games) FROM players GROUP BY age ORDER BY age;
+
+2. Team and the the number of players who have a scoring average (points per game) above 12 on that team, ordered FROM most to least
+
+SELECT team, COUNT(*) as high_scorers FROM players WHERE ( points / games ) > 12 GROUP BY team ORDER BY high_scorers DESC;
+
+
+
+
+
+id  |        name         | age | team | games | points
+-----+---------------------+-----+------+-------+--------
+   1 | Jeff Adrien         |  25 | HOU  |     8 |     21
+   2 | Arron Afflalo       |  26 | DEN  |    62 |    943
+   3 | Blake Ahearn        |  27 | UTA  |     4 |     10
+   4 | Solomon Alabi       |  23 | TOR  |    14 |     33
+   5 | Cole Aldrich        |  23 | OKC  |    26 |     57
+   6 | LaMarcus Aldridge   |  26 | POR  |    55 |   1191
+   7 | Lavoy Allen         |  22 | PHI  |    41 |    169
+   8 | Ray Allen           |  36 | BOS  |    46 |    655
+   9 | Tony Allen          |  30 | MEM  |    58 |    568
+  10 | Morris Almond       |  26 | WAS  |     4 |     14
+  11 | Al-Farouq Aminu     |  21 | NOH  |    66 |    399
+  12 | Louis Amundson      |  29 | IND  |    60 |    213
+  13 | Chris Andersen      |  33 | DEN  |    32 |    168
+  14 | Alan Anderson       |  29 | TOR  |    17 |    163
+  15 | James Anderson      |  22 | SAS  |    51 |    190
+  16 | Ryan Anderson       |  23 | ORL  |    61 |    980
+  17 | Carmelo Anthony     |  27 | NYK  |    55 |   1245
+  18 | Joel Anthony        |  29 | MIA  |    64 |    219
+  19 | Gilbert Arenas      |  30 | MEM  |    17 |     72
+  20 | Trevor Ariza        |  26 | NOH  |    41 |    444
+  21 | Omer Asik           |  25 | CHI  |    66 |    205
+  22 | D.J. Augustin       |  24 | CHA  |    48 |    532
+  23 | Gustavo Ayon        |  26 | NOH  |    54 |    319
+  24 | Kelenna Azubuike    |  28 | DAL  |     3 |      7
+  25 | Luke Babbitt        |  22 | POR  |    40 |    202
+  26 | Renaldo Balkman     |  27 | NYK  |    14 |     42
+  27 | Leandro Barbosa     |  29 | TOR  |    42 |    512
+  28 | Jose Barea          |  27 | MIN  |    41 |    463
+  29 | Andrea Bargnani     |  26 | TOR  |    31 |    603
+  30 | Matt Barnes         |  31 | LAL  |    63 |    491
+  31 | Earl Barron         |  30 | GSW  |     2 |      4
+  32 | Brandon Bass        |  26 | BOS  |    59 |    738
+  33 | Tony Battie         |  35 | PHI  |    27 |     42
+  34 | Shane Battier       |  33 | MIA  |    65 |    311
