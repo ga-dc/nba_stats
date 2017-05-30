@@ -1,4 +1,4 @@
-# SQL Clauses & Aggregation
+ECT# SQL Clauses & Aggregation
 
 ### Part 1
 
