@@ -1,0 +1,25 @@
+id,name,age,team,games(for season),points(for season)
+
+
+#1
+SELECT * FROM players WHERE team = 'NYK';
+
+#2
+SELECT * FROM players  < 26;
+
+#3
+SELECT * FROM players ORDER BY points ASC;
+
+#4
+SELECT name, (points/games) AS ppg FROM players ORDER BY ppg DESC LIMIT 20;
+(documentation source: https://www.postgresql.org/docs/9.0/static/sql-select.html)
+
+#5
+SELECT AVG(age) FROM players;
+(documentation source: https://www.tutorialspoint.com/postgresql/postgresql_avg_function.htm)
+
+#6
+SELECT AVG(age) FROM players WHERE team = 'OKC';
+
+#7
+SELECT AVG(age) FROM players WHERE games > 40;
