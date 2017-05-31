@@ -1,0 +1,11 @@
+1. SELECT * FROM players WHERE team = 'NYK';
+2. SELECT * FROM players WHERE team = 'IND' AND age < 26;
+3. SELECT * FROM players ORDER BY points ASC;
+4. SELECT * FROM players ORDER BY points DESC LIMIT 20;
+5. SELECT AVG(age) FROM players;
+6. SELECT AVG(age) FROM players WHERE team = 'OKC';
+7. SELECT AVG(age) FROM players WHERE games > 40;
+8. SELECT team, SUM(points) FROM players GROUP BY team;
+Bonus
+1. SELECT age, AVG(points/games) FROM players GROUP BY age;
+2. SELECT team, COUNT(points) FROM players WHERE points > 12 GROUP BY team ORDER BY COUNT(points) DESC;
