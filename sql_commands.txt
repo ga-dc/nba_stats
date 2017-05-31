@@ -1,0 +1,6 @@
+select * from players where team = 'NYK'
+select * from players where team ='IND' and age < 26;
+select * from players ORDER BY points;
+select name, points from players MAX points?
+select avg(age) from players
+select avg age from players where team = 'OKC'
