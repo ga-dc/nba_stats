@@ -7,7 +7,7 @@
 4. Name and Points per game (points/games), for the players with the top 20 points per game
     SELECT name, (points / games) AS ppg FROM players
     ORDER BY ppg DESC
-    LIMIT 10;
+    LIMIT 20;
 5. The average age for all players
     SELECT AVG(age) FROM players;
 6. The average age for all players on the Oklahoma City Thunder (OKC)
