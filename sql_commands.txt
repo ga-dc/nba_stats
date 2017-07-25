@@ -8,7 +8,7 @@
 select * from players order by points DESC;
 
 4. Name and Points per game (points/games), for the players with the top 20 points per game
-select name, (points/games) from players where (points/game) order by points DESC;
+select name, (points/games) as PPG from players order by (points/games) DESC LIMIT 20;
 
 
 5. The average age for all players
@@ -21,4 +21,8 @@ select name, (points/games) from players where (points/game) order by points DES
   select AVG(age) from players where games > 40;
 
 8. The team and total points scored from all players on that team (team points), ordered from most team points to least
-select sum(points), team from players order by points ASC;
+select team, SUM(points) from players group by team order by SUM DESC;
+
+Bonus:
+
+select age, AVG(points/games) from players group by age order by age;
