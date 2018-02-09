@@ -1,0 +1,8 @@
+1. 
+SELECT Name, Age, Team, Games, Points
+FROM nba_db
+WHERE Team = ANY (SELECT Team FROM nba_db WHERE Team == NYK);
+
+2.
+SELECT Name, Team,  IND > 26
+FROM nba_db;
